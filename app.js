@@ -5,9 +5,10 @@ import cors from "cors";
 import CourseRoutes from "./courses/routes.js";
 import ModuleRoutes from "./modules/routes.js";
 import "dotenv/config";
-import session from "express-session";
+// import session from "express-session";
 
 const app = express();
+
 app.use(cors());
 app.use(express.json());
 ModuleRoutes(app);
